@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome to VidyoSampleActivity!</string>
+    <string name="app_name">客服系统Demo</string>
+    <string name="login">Login</string>
+    <string name="join_button_text">Join Own Room</string>
+    <string name="join_dialog_title">Join My own room</string>
+    <string name="secured_checkbox">secured</string>
+    <string name="title_activity_login">客服系统Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_demo">MainDemoActivity</string>
+    <string name="title_activity_call_main">CallMainActivity</string>
+    <string name="title_activity_calling">CallingActivity</string>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical" >
+    
+    
+	<RelativeLayout  
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="110dp"
+ 	    android:background="@color/white"
+ 	    >
+ 	    	<ImageView
+ 	       	android:layout_width="70dp"
+ 		    android:layout_height="wrap_content"
+ 		    android:src="@drawable/touxiang1"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:layout_marginTop="10dp"
+ 		    android:layout_centerVertical="true"
+ 	        >
+ 	        </ImageView>
+ 	    
+ 	    
+ 	    	<TextView 
+ 	    	    android:id="@+id/text_roomname"
+		 		android:layout_width="wrap_content"
+		 	    android:layout_height="wrap_content"
+		 	 	android:textColor="#000000"
+		 		android:gravity="left"
+		 		android:layout_marginLeft="80dp"
+		 		android:layout_marginTop="10dp"
+		 		android:textSize="16dp"
+		 		android:layout_alignParentTop="true"
+		 		android:text="" >
+	 	    </TextView>
+	 		
+ 	    	<TextView 
+ 	    	     android:id="@+id/text_roomtopic"
+		 		android:layout_width="wrap_content"
+		 	    android:layout_height="wrap_content"
+		 	 	android:textColor="#000000"
+		 		android:gravity="left"
+		 		android:layout_marginLeft="80dp"
+		 		android:layout_marginTop="30dp"
+		 		android:textSize="20dp"
+		 		android:layout_alignParentTop="true"
+		 		android:text="Apple Iphone 培训" >
+	 	    </TextView>
+	 	    
+ 	    	
+ 	    	<TextView 
+ 	    	      android:id="@+id/text_organizer"
+		 		android:layout_width="wrap_content"
+		 	    android:layout_height="wrap_content"
+		 	 	android:textColor="#000000"
+		 		android:gravity="left"
+		 		android:layout_marginLeft="80dp"
+		 		android:layout_marginTop="60dp"
+		 		android:textSize="20dp"
+		 		android:layout_alignParentTop="true"
+		 		android:text="组织者:Candy" >
+	 	    </TextView>
+	 	
+ 	</RelativeLayout>
+ 
+   	<LinearLayout
+ 		 android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+		android:orientation="horizontal">
+ 	    	<Button
+ 	    	android:id="@+id/bnt_jujue"
+ 	    	  android:layout_height="60dp"
+ 	    	  android:layout_width="0dp"
+		    android:layout_marginTop="5dp"
+		  
+		    android:text="拒绝"
+		    android:layout_weight="1"
+		    android:textSize="20dp"
+		    android:textColor="@color/black"
+		    android:paddingLeft="5dp"
+		    android:paddingTop="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingBottom="5dp"
+		    android:background="@drawable/bnt_custom_gray"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:drawableLeft="@drawable/jujue">
+		    
+		  </Button>
+		  
+ 	    	<Button 
+ 	    	    android:id="@+id/bnt_jieshou"
+		    android:layout_height="60dp"
+		      android:layout_width="0dp"
+		   
+		    android:layout_marginTop="5dp"
+		    android:layout_marginRight="10dp"
+		    android:text="接受"
+		    android:layout_weight="1"
+		    android:textSize="20dp"
+		    android:textColor="@color/black"
+		    android:paddingLeft="5dp"
+		    android:paddingTop="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingBottom="5dp"
+		    android:background="@drawable/bnt_custom_gray"
+		    android:drawableLeft="@drawable/jiesou">
+		  </Button>
+ 	   </LinearLayout>  
+
+</LinearLayout>

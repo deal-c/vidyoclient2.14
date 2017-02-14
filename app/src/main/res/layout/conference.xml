@@ -1,0 +1,187 @@
+<com.esoon.vidyosample.InputMethodRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@color/black"
+	android:id="@+id/input_layout"
+   >
+<LinearLayout
+   android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical" 
+	android:gravity="bottom"
+    android:background="@color/video_back" >
+    
+	<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:background="@color/video_back"
+        android:visibility="visible" > 
+	    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/glsurfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/video_back"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:visibility="visible" > 
+    	</LinearLayout>
+    </LinearLayout>
+     
+     	
+     	<RadioGroup
+        	android:id="@+id/radioGroupview"
+          	android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="1dp"
+		    android:layout_marginBottom="1dp"
+		    android:background="@color/video_back"
+        	android:orientation="horizontal">
+
+     	    <RadioButton
+            style="@style/st_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文本聊天"
+            android:checked="true"
+            android:drawableTop="@drawable/wenbenliaotian"
+            android:id="@+id/tab_chat_video" />
+        
+        <RadioButton
+            style="@style/st_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关闭视频"
+              android:drawableTop="@drawable/guanbishipin"
+        
+            android:id="@+id/tab_camera_video" />
+        <RadioButton
+            style="@style/st_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扬声器"
+            android:drawableTop="@drawable/yangshenqi"
+            android:id="@+id/tab_speaker_video" />
+        <RadioButton
+            style="@style/st_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="静音"
+            android:drawableTop="@drawable/jingying"
+            android:id="@+id/tab_micro_video" />
+       
+          <RadioButton
+            style="@style/st_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全屏"
+            android:drawableTop="@drawable/quanping"
+            android:id="@+id/tab_fullscreen_video" />
+          
+         <RadioButton
+            style="@style/st_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="挂断"
+            android:drawableTop="@drawable/guaduan"
+            android:id="@+id/tab_guanduan_video" />
+    </RadioGroup>
+</LinearLayout>
+
+<TextView
+    android:id="@+id/tv_title_video"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:text="ABC银行"
+    android:textStyle="bold"
+    android:textColor="#f06d01"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textSize="22dp"
+ />
+
+		<ImageView
+		    android:id="@+id/bnt_exitfullscreen"
+		    android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+		    
+		    android:layout_alignParentTop="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:visibility="gone"
+			android:src="@drawable/gengduo" />
+	
+<ScrollView
+     android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="90dp"
+    android:background="@android:color/transparent">
+<LinearLayout
+	 	 android:id="@+id/view_messagelist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+</LinearLayout>
+</ScrollView>
+	<TextView
+		    android:id="@+id/text_bandinfo"
+		    android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="100dp"
+		    android:visibility="visible"
+		    android:text=""
+		    android:lines="2"
+		    android:textSize="16dp"
+		    android:textColor="@color/white"
+	/>
+<!-- 	聊天面板  -->
+	<LinearLayout
+	    android:id="@+id/panel_sendmsg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext_normal_white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:gravity="right"
+        android:visibility="gone" >
+	<EditText
+    android:id="@+id/chat_editmsg"
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/edittext_normal"
+    android:textColor="@color/black"
+    android:gravity="center_vertical|left"
+    android:textSize="16dp"
+    android:singleLine="true"
+    
+    android:text=""
+     android:hint="请输入发送文字内容"
+    android:imeOptions="actionDone"
+ 	/>
+	
+	<Button
+	    android:id="@+id/bnt_sendchatmsg"
+	    android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:text="发送"
+        android:background="#ffa328"
+        android:textColor="#f06d01"
+    	>
+    </Button>
+    </LinearLayout>
+</com.esoon.vidyosample.InputMethodRelativeLayout>

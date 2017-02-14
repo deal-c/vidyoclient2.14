@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+         android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    </FrameLayout>
+    
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="亿迅云"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_image1"
+            android:id="@+id/tab_one" />
+        
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="云电话"
+              android:drawableTop="@drawable/tab_selector_image2"
+        
+            android:id="@+id/tab_two" />
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="共享中心"
+            android:drawableTop="@drawable/tab_selector_image3"
+            android:id="@+id/tab_three" />
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我 "
+            android:drawableTop="@drawable/tab_selector_image4"
+            android:id="@+id/tab_four" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,1 @@
+ndk-build NDK_APPLICATION_MK=./jni/Application.mk clean

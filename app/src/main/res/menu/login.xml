@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   	 <item
+        android:id="@+id/menu_login_item0"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="电商行业"/>
+    
+        <item
+        android:id="@+id/menu_login_item1"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="保险行业"/>
+        
+        <item
+        android:id="@+id/menu_login_item2"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="银行行业"/>
+        
+           <item
+        android:id="@+id/menu_setting_item"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="其他参数设置"/>
+        
+</menu>

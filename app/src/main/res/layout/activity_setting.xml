@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="50dp"
+>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    	>
+<!--        视频地址 -->
+  <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+      		android:text="Vidyo视频地址:"
+      		android:gravity="left"
+          android:layout_marginRight="5dp"
+          >
+      </TextView>
+      
+   
+      
+
+        <EditText
+            android:id="@+id/edit_servervidyo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint=""
+             android:background="@drawable/edittext_normal_white"
+          
+            android:singleLine="false"
+          	android:gravity="top"
+          	android:inputType="textMultiLine"
+         	android:scrollHorizontally="false"
+    
+            android:text=""
+            android:imeOptions="actionDone"
+            android:textColor="@color/black" />
+
+   
+    
+	<!--     	Every360服务器地址 -->
+ 
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+      		android:text="Every360服务器地址:"
+          android:layout_marginRight="5dp"
+           android:gravity="left"
+    
+          >
+      </TextView>
+
+        <EditText
+            android:id="@+id/edit_server360"
+            android:layout_width="fill_parent"
+           android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint=""
+             android:background="@drawable/edittext_normal_white"
+          
+          	android:singleLine="false"
+          	android:gravity="top"
+          	android:inputType="textMultiLine"
+         	android:scrollHorizontally="false"
+            android:text=""
+            android:imeOptions="actionDone"
+            android:textColor="@color/black" />
+    
+        
+        
+           <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+      		android:text="ManagerId:"
+          android:layout_marginRight="5dp"
+           android:gravity="left"
+          >
+          
+               
+      </TextView>
+
+        <EditText
+            android:id="@+id/edit_managerid"
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:lines="2"
+            android:hint=""
+            android:background="@drawable/edittext_normal_white"
+          	android:singleLine="false"
+          	android:gravity="top"
+          	android:inputType="textMultiLine"
+         	android:scrollHorizontally="false"
+            android:text=""
+            android:imeOptions="actionDone"
+            android:textColor="@color/black" />
+    
+    </LinearLayout>  
+
+ <Button
+            android:id="@+id/button_save_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#f06d01"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="保存"
+            android:textColor="@color/white" />
+      
+</RelativeLayout>

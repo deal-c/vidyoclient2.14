@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:paddingTop="10dp"
+ 	    android:paddingBottom="10dp"
+ 	    android:background="@drawable/bg_shadow"
+ 	    android:paddingLeft="5dp"
+ 	    >
+ 	    
+ 	    	<ImageView
+ 	       	android:layout_width="70dp"
+ 		    android:layout_height="wrap_content"
+ 		    android:src="@drawable/touxiang1"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:layout_marginTop="10dp"
+ 		    android:layout_centerVertical="true"
+ 	        >
+ 	        </ImageView>
+ 	    
+ 	    	<TextView 
+ 	    	    android:id="@+id/text_opentime"
+		 		android:layout_width="fill_parent"
+		 	    android:layout_height="wrap_content"
+		 	 	android:textColor="@color/gray"
+		 		android:gravity="left"
+		 		android:layout_marginLeft="80dp"
+		 		android:layout_marginTop="10dp"
+		 		android:layout_marginRight="30dp"
+		 		android:textSize="12dp"
+		 		android:layout_alignParentTop="true"
+		 		android:singleLine="true"
+		 		android:text="10:--12:00 进行中" >
+	 	    </TextView>
+	 	    
+ 	    	
+ 	    	<TextView 
+ 	    	    android:id="@+id/text_topicrow"
+		 		android:layout_width="wrap_content"
+		 	    android:layout_height="wrap_content"
+		 	 	android:textColor="#000000"
+		 		android:gravity="left"
+		 		android:layout_marginLeft="80dp"
+		 		android:layout_marginTop="30dp"
+		 		android:textSize="20dp"
+		 		android:textStyle="bold"
+		 		android:layout_alignParentTop="true"
+		 		android:text="Apple Iphone 培训" >
+	 	    </TextView>
+	 	    
+ 	    	<TextView 
+ 	    	    android:id="@+id/text_organizerrow"
+		 		android:layout_width="wrap_content"
+		 	    android:layout_height="wrap_content"
+		 	 	android:textColor="#000000"
+		 		android:gravity="left"
+		 		android:layout_marginLeft="80dp"
+		 		android:layout_marginTop="60dp"
+		 		android:textSize="20dp"
+		 		android:layout_alignParentTop="true"
+		 		android:text="组织者:Candy" >
+	 	    </TextView>
+	 	    
+ 	    	
+ 	    	<ImageButton 
+			    android:id="@+id/bnt_attend"
+			    android:layout_marginBottom="20dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentBottom="true"
+			    android:scaleType="fitCenter"
+			    android:text="参加"
+			    android:textSize="16sp"
+			    android:textColor="#000000"
+				android:padding="10dp"
+			    android:drawableTop="@drawable/canjia"
+			    android:src="@drawable/canjia"
+			    android:background="@drawable/bg_shadow">
+		  </ImageButton>
+		
+ 	</RelativeLayout>
+ 
+      		

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context=".CallingActivity" >
+        <ImageView
+        android:id="@+id/jietongbg"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/jietongbg" />
+
+	    <TextView
+	    android:id="@+id/tx_username"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试用户"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/jietongbg"
+        />
+	    
+	      <TextView
+	            android:id="@+id/tx_mancount"
+	          android:layout_marginTop="15dp"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="状态:正在等待..."
+        android:textColor="#b6b6b6"
+        android:textSize="18dp"
+        android:paddingLeft="30dp"
+        android:gravity="left"
+        android:layout_below="@id/tx_username"
+        />
+	      
+	   
+	      <Button
+	     android:id="@+id/bnt_cancelcall"
+	     android:layout_marginLeft="20dp"
+	     android:layout_marginRight="20dp"
+	     android:layout_marginBottom="40dp"
+	     android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="放弃呼叫"
+        android:textColor="@color/white"
+        android:background="#de142c"
+        android:textSize="18dp"
+        android:gravity="center"
+        />    
+	   
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+
+        android:background="@drawable/denglubg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        android:paddingTop="30.0dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50.0dip">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/ic_user" />
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/edit_username"
+                android:background="@null"
+                android:hint="请输入用户名"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:lines="1"
+                android:ems="10"
+                android:layout_weight="1.0"
+                android:imeOptions="actionGo" />
+        </LinearLayout>
+        <ImageView android:background="#ffcccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@null" />
+        <LinearLayout android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip">
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/ic_psd"  />
+            <EditText
+                android:textColor="@color/black"
+            android:id="@+id/edit_password"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:hint="请输入密码"
+                android:lines="1"
+                android:password="true"
+                android:layout_weight="1.0"
+                android:inputType="number"
+                android:imeOptions="actionDone" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/psdButton"/>
+        </LinearLayout>
+
+        <ImageView android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@null" />
+
+        <ImageView android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@null" />
+
+        <LinearLayout
+
+            android:gravity="center_horizontal"
+            android:paddingTop="50.0dip"
+            android:paddingBottom="20.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button android:textSize="20.0dip"
+                android:textColor="@color/white"
+                android:id="@+id/button_login"
+                android:background="#fff06d01"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:text="登录" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:textSize="12.0dip"
+        android:textColor="@color/blue"
+        android:gravity="center_horizontal"
+        android:id="@+id/bnt_changetheme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50.0dip"
+
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+
+
+        />
+    <TextView
+        android:textSize="12.0dip"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+       android:id="@+id/tv_manualpostion"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20.0dip"
+        android:text="版权@亿迅信息技术有限公司"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

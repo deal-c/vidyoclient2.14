@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="main_tab_bg_c">#e5e5e5</color>
+<!-- 未选中状态颜色 -->
+<color name="main_tab_bg">#cccccc</color>
+</resources>

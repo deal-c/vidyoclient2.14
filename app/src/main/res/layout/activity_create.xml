@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bnt_custom_gray">
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/createMyRom"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bnt_custom_gray"
+            android:drawableLeft="@drawable/backconf"
+            android:text="创建会议"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bnt_custom_gray"
+            android:text="保存"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/first"
+            android:paddingLeft="10dp"
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@color/white"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="组织者"
+                android:textColor="@color/black" />
+
+      <EditText
+          android:hint="请输入姓名"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/view1"
+        android:paddingLeft="10dp"
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="会议主题"
+            android:textColor="@color/black" />
+        <EditText
+            android:hint="请输入主题名称"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/view3"
+        android:layout_below="@id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:background="@color/white"
+            android:layout_height="40dp"
+            android:text="创建时间"
+            android:textColor="@color/black" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:gravity="right"
+            android:text=">"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/view4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="开放会议"
+            android:textColor="@color/black"
+            android:id="@+id/textView" />
+        <Button
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/coin"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view5"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:id="@+id/view_notifylist2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="参会人员"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        >
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+      >
+
+        <RelativeLayout
+            android:id="@+id/view_notifylist3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/addpeople"/>
+            <ImageView
+                android:id="@+id/add"
+                android:layout_toRightOf="@+id/people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/touxiang1"
+                />
+            <ImageView
+                android:layout_toRightOf="@+id/add"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ddrom"
+                />
+        </RelativeLayout>
+
+        >
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView3"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="100dp"
+            android:background="@color/white"
+            android:layout_height="40dp"
+            android:text="结束时间"
+            android:textColor="@color/black" />
+
+        <Button
+            android:paddingTop="5dp"
+            android:gravity="right"
+            android:text=">"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" />
+    </LinearLayout>
+    >
+
+
+</RelativeLayout>
